@@ -1,0 +1,49 @@
+<!--
+	1、CSS有几种引入方式
+	2、div除了可以通过声明id来控制，还可以声明什么来控制
+	3、如何让两个div，并排显示
+-->
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="志鹏的html学习" />
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background: blue;
+		}
+
+		#zs{
+			background: green;
+			float: left;
+		}
+		
+		#ys{
+			background: gray;
+			float: left;
+		}
+
+		#zx{
+			background: red;
+			float: left;
+			clear: left;
+		}
+
+		#yx{
+			background: yellow;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="zs">左上</div>
+	<div id="ys">右上</div>
+	<div id="zx">左下</div>
+	<div id="yx">右下</div>
+</body>
+</html>
